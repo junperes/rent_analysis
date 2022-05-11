@@ -12,7 +12,7 @@ A partir da análise dessas relações observa-se, por exemplo, no quarto gráfi
 
 ## Gráfico Facetado do número de quartos por cidade
 
-O script faceted_graphic.py constrói um gráfico facetado por cidade mapeando o número de quartos que cada cidade tem. Para isso foi utilizado como visualização dos subgráficos a classe sns.countplot. 
+O script faceted_graphic.py constrói um gráfico facetado por cidade mapeando o número de quartos que cada cidade tem. Para isso foi utilizado como visualização dos subgráficos a função sns.countplot. 
 
 ![Número de quartos por cidade](result/faceted_graphic.png)
 
