@@ -1,34 +1,33 @@
-# Sobre
+# About
 
-Desafio da Pós Graduação em Análise de Dados usando Seaborn
+Post-Graduate Challenge in Data Analysis using Seaborn
 
-## Relações Pareadas
+## Pairwise Relationships
 
-O script pairwise_relationships.py gera um gráfico de relações pareadas que cruza as informações de número de quartos, número de banheiros, vagas de garagens e o total do aluguel. Os dados são pintados pela cidade do imóvel. 
+The script `pairwise_relationships.py` generates a paired relationship plot that crosses information on the number of bedrooms, number of bathrooms, parking spaces, and total rent. The data is colored by the city of the property.
 
-![Relações pareadas](result/pairwise_relationship.png)
+![Pairwise Relationships](result/pairwise_relationship.png)
 
-A partir da análise dessas relações observa-se, por exemplo, no quarto gráfico da primeira linha, que a cidade que possui o aluguel mais caro para um imóvel de um quarto é a cidade de São Paulo.
+From the analysis of these relationships, it is observed, for example, in the fourth graph of the first row, that the city with the highest rent for a one-bedroom property is São Paulo.
 
-## Gráfico Facetado do número de quartos por cidade
+## Faceted Graph of Number of Bedrooms by City
 
-O script faceted_graphic.py constrói um gráfico facetado por cidade mapeando o número de quartos que cada cidade tem. Para isso foi utilizado como visualização dos subgráficos a função sns.countplot. 
+The script `faceted_graphic.py` constructs a faceted graph by city mapping the number of bedrooms each city has. For this, the `sns.countplot` function was used as visualization for the subplots.
 
-![Número de quartos por cidade](result/faceted_graphic.png)
+![Number of Bedrooms by City](result/faceted_graphic.png)
 
-Um resultado observado no gráfico é a quantidade de quartos mais frequente nos apartamentos disponíveis em cada uma das cidades. Sendo 3 quartos em São Paulo, Campinas e Belo Horizonte e 2 quartos em Porto Alegre e Rio de Janeiro.
+One result observed in the graph is the most frequent number of bedrooms in the apartments available in each of the cities. There are 3 bedrooms in São Paulo, Campinas, and Belo Horizonte, and 2 bedrooms in Porto Alegre and Rio de Janeiro.
 
-## Gráfico Facetado do preço do aluguel, por cidade, por aceitar ou não animais
+## Faceted Graph of Rent Price, by City, by Acceptance of Pets
 
-O script animal_scatter.py constrói um gráfico facetado pelas cidades (colunas) e pela variável animal (linhas) com a distribuição do valor total do aluguel. 
+The script `animal_scatter.py` constructs a faceted graph by cities (columns) and by the animal variable (rows) with the distribution of the total rent value.
 
+![Relationship between Rent Price and Acceptance of Pets](result/animal_scatter.png)
 
-![Relação entre o preço do aluguel e o fato de aceitar animais](result/animal_scatter.png)
+The graph allows us to analyze if there is any relationship between the rent price and whether the condominium accepts pets, but the lack of density hinders the analysis.
 
-O gŕafico permite analisar se existe alguma relação entre o preço do aluguel e o fato do condomínio aceitar animais, porém a ausência de densidade prejudica a análise. 
+Therefore, the script `animal_swarm.py` was created to observe the density of the values.
 
-Sendo assim foi criado o script animal_swarm.py que permite observar a densidade dos valores.
+![Relationship between Rent Price and Acceptance of Pets Exposing Data Density](result/animal_swarm.png)
 
-![Relação entre o preço do aluguel e o fato de aceitar animais expondo densidade dos dados](result/animal_swarm.png)
-
-O gráfico com as densidades dos dados permite uma melhor conclusão da relação entre o preço do aluguel e o fato do condomínio aceitar animais. A partir daí conclui-se que a quantidade de apartamentos com valores de aluguel mais altos que aceita animais é maior do que a quantidade que não aceita.
+The graph with the data densities allows for a better conclusion of the relationship between the rent price and whether the condominium accepts pets. It is concluded that the number of apartments with higher rent values that accept pets is greater than the number that does not.
